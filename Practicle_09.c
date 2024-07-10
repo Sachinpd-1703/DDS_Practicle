@@ -15,7 +15,7 @@ void Selection_Sort(int arr[],int size){
     int i,j,min_idx,temp;
     for(i=0;i<size-1;i++){
         min_idx=i;
-        for(j=1;j<size;j++){
+        for(j=i+1;j<size;j++){
             if(arr[min_idx]>arr[j]){
                 min_idx=j;
             }
@@ -130,7 +130,7 @@ int main(){
     int arr[]= {43, 17, 9, 28, 91, 56, 72, 34, 89, 2, 58, 13, 67, 75, 24};
     int size = sizeof(arr)/sizeof(arr[0]);
 
-    printf("Array before Sorying\n");
+    printf("Array before Sorting\n");
     printArray(arr,size);
     
     printf("\nArray After Sorying\n");
